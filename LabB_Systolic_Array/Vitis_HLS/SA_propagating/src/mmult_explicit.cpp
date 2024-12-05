@@ -22,7 +22,7 @@ void mmult(volatile int* a, // Read-Only Matrix A
 		   int b_col     // Matrix B Col Size
            ) {
     // AXI4 Master's depth must be a constant and should be adjusted according to MAX_SIZE * MAX_SIZE
-	#pragma HLS INTERFACE m_axi port=a offset=slave bundle=gmem0 depth=256
+    #pragma HLS INTERFACE m_axi port=a offset=slave bundle=gmem0 depth=256
     #pragma HLS INTERFACE m_axi port=b offset=slave bundle=gmem1 depth=256
     #pragma HLS INTERFACE m_axi port=c offset=slave bundle=gmem2 depth=256
 
