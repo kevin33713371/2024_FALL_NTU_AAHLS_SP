@@ -1,6 +1,6 @@
 # NTU-AAHLS_SP-2024-Fall
 Repo for the course of Application Acceleration with High-Level-Synthesis Special Project in NTU 2024 Fall  <br />
-Professor : Jiin Lai <br />
+Professor : 賴瑾(Jiin Lai) <br />
 This course offers two discipline : HLS(High Level Synthesis) / SoC(System on Chip) Design <br />
 My option : HLS <br />
 Name : 黃聖崴(Sheng-Wei Huang)  <br />
