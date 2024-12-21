@@ -7,6 +7,7 @@ Name : 黃聖崴(Sheng-Wei Huang)  <br />
 Student ID : 61275047H(Student in NTNU) <br />
 Course Study Journal(HackMD) : [My Study Journal](https://hackmd.io/6AQMizsjS-eXy9o0s7xgsw)
 
+## Experiment Overview
 Lab1 - A simple experiment to understand the operation of HLS and the use of its tools through multiplication. <br /> <br />
 Lab2 - Understanding the port-level protocol for data transmission through the design of an FIR filter on AXI4 Master and AXI4 Stream interfaces. <br /> <br />
 Lab3 - Learning to write host code using OpenCL , simulating and analyzing kernel code on Alveo series FPGA boards. <br /> <br />
