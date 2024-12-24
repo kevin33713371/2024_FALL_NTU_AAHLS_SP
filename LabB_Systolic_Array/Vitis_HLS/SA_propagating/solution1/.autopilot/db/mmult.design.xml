@@ -1230,21 +1230,21 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>265</Best-caseLatency>
-<Average-caseLatency>265</Average-caseLatency>
-<Worst-caseLatency>265</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.650 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.650 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.650 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>265</PipelineInitiationInterval>
+<Best-caseLatency>undef</Best-caseLatency>
+<Average-caseLatency>undef</Average-caseLatency>
+<Worst-caseLatency>undef</Worst-caseLatency>
+<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>undef</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <readA>
 <Name>readA</Name>
-<TripCount>256</TripCount>
-<Latency>257</Latency>
-<AbsoluteTimeLatency>2.570 us</AbsoluteTimeLatency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <PipelineType>yes</PipelineType>
@@ -2607,21 +2607,21 @@
 <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>265</Best-caseLatency>
-<Average-caseLatency>265</Average-caseLatency>
-<Worst-caseLatency>265</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.650 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.650 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.650 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>265</PipelineInitiationInterval>
+<Best-caseLatency>undef</Best-caseLatency>
+<Average-caseLatency>undef</Average-caseLatency>
+<Worst-caseLatency>undef</Worst-caseLatency>
+<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>undef</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <readB>
 <Name>readB</Name>
-<TripCount>256</TripCount>
-<Latency>257</Latency>
-<AbsoluteTimeLatency>2.570 us</AbsoluteTimeLatency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <PipelineType>yes</PipelineType>
@@ -16515,8 +16515,8 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>sext_ln164_1</name>
-<Object>sext_ln164_1</Object>
+<name>sext_ln165_1</name>
+<Object>sext_ln165_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

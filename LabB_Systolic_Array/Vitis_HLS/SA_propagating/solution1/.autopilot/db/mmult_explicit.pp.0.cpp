@@ -28342,6 +28342,10 @@ __attribute__((sdx_kernel("mmult", 0))) void mmult(volatile int* a,
 #pragma HLSDIRECTIVE TOP name=mmult
 # 23 "SA_propagating/src/mmult_explicit.cpp"
 
+#line 6 "/home/ubuntu/Desktop/2024_Fall_NTU_AAHLS_SP/LabB_Systolic_Array/Vitis_HLS/SA_propagating/solution1/directives.tcl"
+#pragma HLSDIRECTIVE TOP name=mmult
+# 23 "SA_propagating/src/mmult_explicit.cpp"
+
 
 #pragma HLS INTERFACE m_axi port=a offset=slave bundle=gmem0 depth=256
 #pragma HLS INTERFACE m_axi port=b offset=slave bundle=gmem1 depth=256
@@ -28393,8 +28397,8 @@ init:
 
 readA:
     for (int loc = 0, i = 0, j = 0; loc < a_row * a_col; loc++, j++) {
-#pragma HLS LOOP_TRIPCOUNT min = c_size* c_size max = c_size * c_size
 
+#pragma HLS PIPELINE II=1
  if (j == a_col) {
             i++;
             j = 0;
@@ -28412,8 +28416,8 @@ readA:
 
 readB:
     for (int loc = 0, i = 0, j = 0; loc < b_row * b_col; loc++, j++) {
-#pragma HLS LOOP_TRIPCOUNT min = c_size * c_size max = c_size * c_size
 
+#pragma HLS PIPELINE II=1
  if (j == b_col) {
             i++;
             j = 0;
@@ -28478,7 +28482,8 @@ systolic1:
 writeC:
     for (int loc = 0, i = 0, j = 0; loc < c_row * c_col; loc++, j++) {
 
-        if (j == c_col) {
+#pragma HLS PIPELINE II=1
+ if (j == c_col) {
             i++;
             j = 0;
         }

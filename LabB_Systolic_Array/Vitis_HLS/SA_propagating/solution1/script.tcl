@@ -5,8 +5,8 @@
 ############################################################
 open_project SA_propagating
 set_top mmult
-add_files SA_propagating/src/mmult.h
 add_files SA_propagating/src/mmult_explicit.cpp
+add_files SA_propagating/src/mmult.h
 add_files -tb SA_propagating/src/mmultTester.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcu50-fsvh2104-2-e}

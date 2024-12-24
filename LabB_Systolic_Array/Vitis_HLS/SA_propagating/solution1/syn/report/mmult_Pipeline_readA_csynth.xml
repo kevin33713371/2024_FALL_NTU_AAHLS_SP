@@ -22,20 +22,20 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>265</Best-caseLatency>
-<Average-caseLatency>265</Average-caseLatency>
-<Worst-caseLatency>265</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.650 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.650 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.650 us</Worst-caseRealTimeLatency>
-<Interval-min>265</Interval-min>
-<Interval-max>265</Interval-max>
+<Best-caseLatency>undef</Best-caseLatency>
+<Average-caseLatency>undef</Average-caseLatency>
+<Worst-caseLatency>undef</Worst-caseLatency>
+<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+<Interval-min>undef</Interval-min>
+<Interval-max>undef</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <readA>
-<TripCount>256</TripCount>
-<Latency>257</Latency>
-<AbsoluteTimeLatency>2570</AbsoluteTimeLatency>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <InstanceList>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'mmult'
 ================================================================
-* Date:           Wed Dec  4 13:26:38 2024
+* Date:           Sat Dec 21 09:50:19 2024
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
 * Project:        SA_propagating
@@ -39,8 +39,8 @@
         |               Instance               |          Module          |   min   |   max   |    min   |    max   | min | max |   Type  |
         +--------------------------------------+--------------------------+---------+---------+----------+----------+-----+-----+---------+
         |grp_mmult_Pipeline_init_fu_5882       |mmult_Pipeline_init       |       18|       18|  0.180 us|  0.180 us|   18|   18|       no|
-        |grp_mmult_Pipeline_readA_fu_5934      |mmult_Pipeline_readA      |      265|      265|  2.650 us|  2.650 us|  265|  265|       no|
-        |grp_mmult_Pipeline_readB_fu_5960      |mmult_Pipeline_readB      |      265|      265|  2.650 us|  2.650 us|  265|  265|       no|
+        |grp_mmult_Pipeline_readA_fu_5934      |mmult_Pipeline_readA      |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_mmult_Pipeline_readB_fu_5960      |mmult_Pipeline_readB      |        ?|        ?|         ?|         ?|    ?|    ?|       no|
         |grp_mmult_Pipeline_systolic1_fu_5986  |mmult_Pipeline_systolic1  |       48|       48|  0.480 us|  0.480 us|   48|   48|       no|
         |grp_mmult_Pipeline_writeC_fu_6870     |mmult_Pipeline_writeC     |        ?|        ?|         ?|         ?|    ?|    ?|       no|
         +--------------------------------------+--------------------------+---------+---------+----------+----------+-----+-----+---------+
@@ -828,7 +828,7 @@
     |mul60_reg_10264                                    |   32|   0|   32|          0|
     |mul_reg_10254                                      |   32|   0|   32|          0|
     |trunc_ln100_2_reg_10269                            |   62|   0|   62|          0|
-    |trunc_ln164_1_reg_10274                            |   62|   0|   62|          0|
+    |trunc_ln165_1_reg_10274                            |   62|   0|   62|          0|
     |trunc_ln81_2_reg_10259                             |   62|   0|   62|          0|
     +---------------------------------------------------+-----+----+-----+-----------+
     |Total                                              |16974|   0|16974|          0|

@@ -408,7 +408,7 @@ reg   [61:0] trunc_ln81_2_reg_10259;
 wire   [31:0] mul60_fu_7152_p2;
 reg   [31:0] mul60_reg_10264;
 reg   [61:0] trunc_ln100_2_reg_10269;
-reg   [61:0] trunc_ln164_1_reg_10274;
+reg   [61:0] trunc_ln165_1_reg_10274;
 wire    ap_CS_fsm_state4;
 wire   [31:0] localA_q1;
 reg   [31:0] localA_load_reg_10599;
@@ -4104,7 +4104,7 @@ mmult_mmult_Pipeline_writeC grp_mmult_Pipeline_writeC_fu_6870(
     .m_axi_gmem2_BRESP(2'd0),
     .m_axi_gmem2_BID(1'd0),
     .m_axi_gmem2_BUSER(1'd0),
-    .sext_ln164_1(trunc_ln164_1_reg_10274),
+    .sext_ln165_1(trunc_ln165_1_reg_10274),
     .mul237(mul237_reg_15543),
     .b_col(b_col_read_reg_8398),
     .localC_reload(grp_mmult_Pipeline_systolic1_fu_5986_localC_out),
@@ -4788,7 +4788,7 @@ always @ (posedge ap_clk) begin
         mul60_reg_10264 <= mul60_fu_7152_p2;
         mul_reg_10254 <= mul_fu_7136_p2;
         trunc_ln100_2_reg_10269 <= {{b[63:2]}};
-        trunc_ln164_1_reg_10274 <= {{c[63:2]}};
+        trunc_ln165_1_reg_10274 <= {{c[63:2]}};
         trunc_ln81_2_reg_10259 <= {{a[63:2]}};
     end
 end

@@ -484,7 +484,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "265", "EstimateLatencyMax" : "265",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -526,7 +526,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "265", "EstimateLatencyMax" : "265",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -1705,7 +1705,7 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem2_blk_n_AW", "Type" : "RtlSignal"},
 					{"Name" : "gmem2_blk_n_B", "Type" : "RtlSignal"},
 					{"Name" : "gmem2_blk_n_W", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln164_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln165_1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mul237", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b_col", "Type" : "None", "Direction" : "I"},
 			{"Name" : "localC_reload", "Type" : "None", "Direction" : "I"},
@@ -2917,7 +2917,7 @@ set ArgLastReadFirstWriteLatency {
 		localC_out {Type O LastRead -1 FirstWrite 1}}
 	mmult_Pipeline_writeC {
 		gmem2 {Type O LastRead 2 FirstWrite 2}
-		sext_ln164_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln165_1 {Type I LastRead 0 FirstWrite -1}
 		mul237 {Type I LastRead 0 FirstWrite -1}
 		b_col {Type I LastRead 0 FirstWrite -1}
 		localC_reload {Type I LastRead 0 FirstWrite -1}

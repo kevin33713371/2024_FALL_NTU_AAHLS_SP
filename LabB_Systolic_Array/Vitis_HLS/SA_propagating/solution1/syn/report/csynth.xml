@@ -1903,14 +1903,14 @@
                     <ModuleName>mmult_Pipeline_readA</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>5934</ID>
-                    <BindInstances>add_ln74_fu_408_p2 add_ln78_fu_453_p2 j_6_fu_434_p2</BindInstances>
+                    <BindInstances>add_ln74_fu_402_p2 add_ln78_fu_447_p2 j_6_fu_428_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_mmult_Pipeline_readB_fu_5960</InstName>
                     <ModuleName>mmult_Pipeline_readB</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>5960</ID>
-                    <BindInstances>add_ln93_fu_408_p2 add_ln97_fu_430_p2 j_3_fu_476_p2</BindInstances>
+                    <BindInstances>add_ln93_fu_402_p2 add_ln97_fu_424_p2 j_3_fu_470_p2</BindInstances>
                 </Instance>
                 <Instance>
                     <InstName>grp_mmult_Pipeline_systolic1_fu_5986</InstName>
@@ -1924,7 +1924,7 @@
                     <ModuleName>mmult_Pipeline_writeC</ModuleName>
                     <IsCompInst>true</IsCompInst>
                     <ID>6870</ID>
-                    <BindInstances>add_ln158_fu_2190_p2 add_ln161_fu_2207_p2 j_2_fu_2619_p2</BindInstances>
+                    <BindInstances>add_ln158_fu_2188_p2 add_ln162_fu_2205_p2 j_2_fu_2617_p2</BindInstances>
                 </Instance>
             </InstancesList>
             <BindInstances>localA_U localA_1_U localA_2_U localA_3_U localA_4_U localA_5_U localA_6_U localA_7_U localA_8_U localA_9_U localA_10_U localA_11_U localA_12_U localA_13_U localA_14_U localA_15_U localB_U localB_1_U localB_2_U localB_3_U localB_4_U localB_5_U localB_6_U localB_7_U localB_8_U localB_9_U localB_10_U localB_11_U localB_12_U localB_13_U localB_14_U localB_15_U mul_32s_32s_32_1_1_U1477 mul_32s_32s_32_1_1_U1478 mul_32s_32s_32_1_1_U1479</BindInstances>
@@ -2000,21 +2000,21 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>265</Best-caseLatency>
-                    <Average-caseLatency>265</Average-caseLatency>
-                    <Worst-caseLatency>265</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>2.650 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>2.650 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>2.650 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>265</PipelineInitiationInterval>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <readA>
                         <Name>readA</Name>
-                        <TripCount>256</TripCount>
-                        <Latency>257</Latency>
-                        <AbsoluteTimeLatency>2.570 us</AbsoluteTimeLatency>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -2042,9 +2042,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln74_fu_408_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:74" URAM="0" VARIABLE="add_ln74"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln78_fu_453_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:78" URAM="0" VARIABLE="add_ln78"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readA" OPTYPE="add" PRAGMA="" RTLNAME="j_6_fu_434_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:74" URAM="0" VARIABLE="j_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln74_fu_402_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:74" URAM="0" VARIABLE="add_ln74"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readA" OPTYPE="add" PRAGMA="" RTLNAME="add_ln78_fu_447_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:78" URAM="0" VARIABLE="add_ln78"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readA" OPTYPE="add" PRAGMA="" RTLNAME="j_6_fu_428_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:74" URAM="0" VARIABLE="j_6"/>
             </BindNodes>
         </Module>
         <Module>
@@ -2059,21 +2059,21 @@
                     <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>265</Best-caseLatency>
-                    <Average-caseLatency>265</Average-caseLatency>
-                    <Worst-caseLatency>265</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>2.650 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>2.650 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>2.650 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>265</PipelineInitiationInterval>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <readB>
                         <Name>readB</Name>
-                        <TripCount>256</TripCount>
-                        <Latency>257</Latency>
-                        <AbsoluteTimeLatency>2.570 us</AbsoluteTimeLatency>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
@@ -2101,9 +2101,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readB" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_fu_408_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:93" URAM="0" VARIABLE="add_ln93"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readB" OPTYPE="add" PRAGMA="" RTLNAME="add_ln97_fu_430_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:97" URAM="0" VARIABLE="add_ln97"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readB" OPTYPE="add" PRAGMA="" RTLNAME="j_3_fu_476_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:93" URAM="0" VARIABLE="j_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readB" OPTYPE="add" PRAGMA="" RTLNAME="add_ln93_fu_402_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:93" URAM="0" VARIABLE="add_ln93"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readB" OPTYPE="add" PRAGMA="" RTLNAME="add_ln97_fu_424_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:97" URAM="0" VARIABLE="add_ln97"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="readB" OPTYPE="add" PRAGMA="" RTLNAME="j_3_fu_470_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:93" URAM="0" VARIABLE="j_3"/>
             </BindNodes>
         </Module>
         <Module>
@@ -2729,9 +2729,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeC" OPTYPE="add" PRAGMA="" RTLNAME="add_ln158_fu_2190_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:158" URAM="0" VARIABLE="add_ln158"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeC" OPTYPE="add" PRAGMA="" RTLNAME="add_ln161_fu_2207_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:161" URAM="0" VARIABLE="add_ln161"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeC" OPTYPE="add" PRAGMA="" RTLNAME="j_2_fu_2619_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:158" URAM="0" VARIABLE="j_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeC" OPTYPE="add" PRAGMA="" RTLNAME="add_ln158_fu_2188_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:158" URAM="0" VARIABLE="add_ln158"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeC" OPTYPE="add" PRAGMA="" RTLNAME="add_ln162_fu_2205_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:162" URAM="0" VARIABLE="add_ln162"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="writeC" OPTYPE="add" PRAGMA="" RTLNAME="j_2_fu_2617_p2" SOURCE="SA_propagating/src/mmult_explicit.cpp:158" URAM="0" VARIABLE="j_2"/>
             </BindNodes>
         </Module>
         <Module>
@@ -3307,7 +3307,7 @@
                     <keys size="5">HW Interface, Variable, Problem, Resolution, Location</keys>
                     <column name="m_axi_gmem0">a, Volatile or Atomic access cannot be transformed, 214-227, SA_propagating/src/mmult_explicit.cpp:81:24</column>
                     <column name="m_axi_gmem1">b, Volatile or Atomic access cannot be transformed, 214-227, SA_propagating/src/mmult_explicit.cpp:100:24</column>
-                    <column name="m_axi_gmem2">c, Volatile or Atomic access cannot be transformed, 214-227, SA_propagating/src/mmult_explicit.cpp:164:16</column>
+                    <column name="m_axi_gmem2">c, Volatile or Atomic access cannot be transformed, 214-227, SA_propagating/src/mmult_explicit.cpp:165:16</column>
                 </table>
             </item>
         </section>
@@ -3329,9 +3329,10 @@
         <Pragma type="array_partition" location="SA_propagating/src/mmult_explicit.cpp:55" status="valid" parentFunction="mmult" variable="" isDirective="0" options="variable = inA dim=0 complete"/>
         <Pragma type="array_partition" location="SA_propagating/src/mmult_explicit.cpp:58" status="valid" parentFunction="mmult" variable="" isDirective="0" options="variable = inB dim=0 complete"/>
         <Pragma type="pipeline" location="SA_propagating/src/mmult_explicit.cpp:63" status="valid" parentFunction="mmult" variable="" isDirective="0" options=""/>
-        <Pragma type="loop_tripcount" location="SA_propagating/src/mmult_explicit.cpp:75" status="valid" parentFunction="mmult" variable="" isDirective="0" options="min = c_size* c_size max = c_size * c_size"/>
-        <Pragma type="loop_tripcount" location="SA_propagating/src/mmult_explicit.cpp:94" status="valid" parentFunction="mmult" variable="" isDirective="0" options="min = c_size * c_size max = c_size * c_size"/>
+        <Pragma type="pipeline" location="SA_propagating/src/mmult_explicit.cpp:76" status="valid" parentFunction="mmult" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="SA_propagating/src/mmult_explicit.cpp:95" status="valid" parentFunction="mmult" variable="" isDirective="0" options="II=1"/>
         <Pragma type="pipeline" location="SA_propagating/src/mmult_explicit.cpp:113" status="valid" parentFunction="mmult" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="SA_propagating/src/mmult_explicit.cpp:160" status="valid" parentFunction="mmult" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

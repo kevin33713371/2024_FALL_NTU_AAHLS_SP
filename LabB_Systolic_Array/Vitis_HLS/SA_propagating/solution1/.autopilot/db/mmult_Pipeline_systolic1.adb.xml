@@ -37301,12 +37301,12 @@ for.body155:449 %icmp_ln112 = icmp_eq  i6 %r_1, i6 46
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3303" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="3303" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.body155:450 %speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 46, i64 46, i64 46
+for.body155:450 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 46, i64 46, i64 46
 
 ]]></Node>
-<StgValue><ssdm name="speclooptripcount_ln0"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </operation>
 
 <operation id="2490" st_id="2" stage="1" lat="1">
@@ -41973,7 +41973,7 @@ for.body155.split_ifconv:288 %trunc_ln112 = trunc i6 %r_1
 
 <Node id="3596" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.body155.split_ifconv:289 %specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_5
+for.body155.split_ifconv:289 %specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_9
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln113"/></StgValue>
@@ -41989,7 +41989,7 @@ for.body155.split_ifconv:289 %specpipeline_ln113 = specpipeline void @_ssdm_op_S
 
 <Node id="3597" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body155.split_ifconv:290 %specloopname_ln112 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15
+for.body155.split_ifconv:290 %specloopname_ln112 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln112"/></StgValue>
@@ -82047,13 +82047,13 @@ writeC.exitStub:512 %ret_ln0 = ret
 </dataflow>
 <dataflow id="9268" from="StgValue_9267" to="icmp_ln112" fromId="9267" toId="2488">
 </dataflow>
-<dataflow id="9270" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln0" fromId="9269" toId="2489">
+<dataflow id="9270" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="9269" toId="2489">
 </dataflow>
-<dataflow id="9272" from="StgValue_9271" to="speclooptripcount_ln0" fromId="9271" toId="2489">
+<dataflow id="9272" from="StgValue_9271" to="empty" fromId="9271" toId="2489">
 </dataflow>
-<dataflow id="9273" from="StgValue_9271" to="speclooptripcount_ln0" fromId="9271" toId="2489">
+<dataflow id="9273" from="StgValue_9271" to="empty" fromId="9271" toId="2489">
 </dataflow>
-<dataflow id="9274" from="StgValue_9271" to="speclooptripcount_ln0" fromId="9271" toId="2489">
+<dataflow id="9274" from="StgValue_9271" to="empty" fromId="9271" toId="2489">
 </dataflow>
 <dataflow id="9275" from="r_1" to="add_ln112" fromId="2039" toId="2490">
 </dataflow>
@@ -82649,11 +82649,11 @@ writeC.exitStub:512 %ret_ln0 = ret
 </dataflow>
 <dataflow id="9575" from="StgValue_9572" to="specpipeline_ln113" fromId="9572" toId="2781">
 </dataflow>
-<dataflow id="9577" from="empty_5" to="specpipeline_ln113" fromId="9576" toId="2781">
+<dataflow id="9577" from="empty_9" to="specpipeline_ln113" fromId="9576" toId="2781">
 </dataflow>
 <dataflow id="9579" from="_ssdm_op_SpecLoopName" to="specloopname_ln112" fromId="9578" toId="2782">
 </dataflow>
-<dataflow id="9581" from="empty_15" to="specloopname_ln112" fromId="9580" toId="2782">
+<dataflow id="9581" from="empty_3" to="specloopname_ln112" fromId="9580" toId="2782">
 </dataflow>
 <dataflow id="9583" from="_ssdm_op_PartSelect.i2.i6.i32.i32" to="tmp_1" fromId="9582" toId="2783">
 </dataflow>

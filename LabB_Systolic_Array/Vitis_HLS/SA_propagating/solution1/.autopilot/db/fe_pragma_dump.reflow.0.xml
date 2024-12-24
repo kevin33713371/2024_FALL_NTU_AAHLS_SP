@@ -1,7 +1,8 @@
 <pragmas>
+<pragma file="SA_propagating/src/mmult_explicit.cpp" line="160" pragmaType="pipeline" parentfunction="mmult" off="0" ii="1" rewind="0" style=""/>
 <pragma file="SA_propagating/src/mmult_explicit.cpp" line="113" pragmaType="pipeline" parentfunction="mmult" off="0" ii="-1" rewind="0" style=""/>
-<pragma file="SA_propagating/src/mmult_explicit.cpp" line="94" pragmaType="loop_tripcount" parentfunction="mmult" min="256" max="256" avg="256"/>
-<pragma file="SA_propagating/src/mmult_explicit.cpp" line="75" pragmaType="loop_tripcount" parentfunction="mmult" min="256" max="256" avg="256"/>
+<pragma file="SA_propagating/src/mmult_explicit.cpp" line="95" pragmaType="pipeline" parentfunction="mmult" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SA_propagating/src/mmult_explicit.cpp" line="76" pragmaType="pipeline" parentfunction="mmult" off="0" ii="1" rewind="0" style=""/>
 <pragma file="SA_propagating/src/mmult_explicit.cpp" line="63" pragmaType="pipeline" parentfunction="mmult" off="0" ii="-1" rewind="0" style=""/>
 <pragma file="SA_propagating/src/mmult_explicit.cpp" line="25" pragmaType="interface" parentfunction="mmult" mode="m_axi" port="a" bundle="gmem0" offset="slave" name="" depth="256" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1"/>
 <pragma file="SA_propagating/src/mmult_explicit.cpp" line="26" pragmaType="interface" parentfunction="mmult" mode="m_axi" port="b" bundle="gmem1" offset="slave" name="" depth="256" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1"/>

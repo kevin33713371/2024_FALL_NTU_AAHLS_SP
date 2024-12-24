@@ -1,7 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../src/mmult_explicit.cpp in debug mode
-   Generating csim.exe
+make: 'csim.exe' is up to date.
 Matrix A:
 3 6 7 5 3 5 6 2 9 1 2 7 0 9 3 6 
 0 6 2 6 1 8 7 9 2 0 2 3 7 5 9 2 

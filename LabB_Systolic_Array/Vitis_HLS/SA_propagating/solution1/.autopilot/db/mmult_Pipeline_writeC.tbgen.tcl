@@ -14,7 +14,7 @@ set C_modelName {mmult_Pipeline_writeC}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ gmem2 int 32 regular {axi_master 1}  }
-	{ sext_ln164_1 int 62 regular  }
+	{ sext_ln165_1 int 62 regular  }
 	{ mul237 int 32 regular  }
 	{ b_col int 32 regular  }
 	{ localC_reload int 32 regular  }
@@ -277,7 +277,7 @@ set C_modelArgList {
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "gmem2", "interface" : "axi_master", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[ {"cElement": [{"cName": "c","offset": { "type": "dynamic","port_name": "c","bundle": "control"},"direction": "WRITEONLY"}]}]} , 
- 	{ "Name" : "sext_ln164_1", "interface" : "wire", "bitwidth" : 62, "direction" : "READONLY"} , 
+ 	{ "Name" : "sext_ln165_1", "interface" : "wire", "bitwidth" : 62, "direction" : "READONLY"} , 
  	{ "Name" : "mul237", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "b_col", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "localC_reload", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
@@ -592,7 +592,7 @@ set portList {
 	{ m_axi_gmem2_BRESP sc_in sc_lv 2 signal 0 } 
 	{ m_axi_gmem2_BID sc_in sc_lv 1 signal 0 } 
 	{ m_axi_gmem2_BUSER sc_in sc_lv 1 signal 0 } 
-	{ sext_ln164_1 sc_in sc_lv 62 signal 1 } 
+	{ sext_ln165_1 sc_in sc_lv 62 signal 1 } 
 	{ mul237 sc_in sc_lv 32 signal 2 } 
 	{ b_col sc_in sc_lv 32 signal 3 } 
 	{ localC_reload sc_in sc_lv 32 signal 4 } 
@@ -906,7 +906,7 @@ set NewPortList {[
  	{ "name": "m_axi_gmem2_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem2", "role": "BRESP" }} , 
  	{ "name": "m_axi_gmem2_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem2", "role": "BID" }} , 
  	{ "name": "m_axi_gmem2_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem2", "role": "BUSER" }} , 
- 	{ "name": "sext_ln164_1", "direction": "in", "datatype": "sc_lv", "bitwidth":62, "type": "signal", "bundle":{"name": "sext_ln164_1", "role": "default" }} , 
+ 	{ "name": "sext_ln165_1", "direction": "in", "datatype": "sc_lv", "bitwidth":62, "type": "signal", "bundle":{"name": "sext_ln165_1", "role": "default" }} , 
  	{ "name": "mul237", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "mul237", "role": "default" }} , 
  	{ "name": "b_col", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "b_col", "role": "default" }} , 
  	{ "name": "localC_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "localC_reload", "role": "default" }} , 
@@ -1188,7 +1188,7 @@ set RtlHierarchyInfo {[
 					{"Name" : "gmem2_blk_n_AW", "Type" : "RtlSignal"},
 					{"Name" : "gmem2_blk_n_B", "Type" : "RtlSignal"},
 					{"Name" : "gmem2_blk_n_W", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln164_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln165_1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "mul237", "Type" : "None", "Direction" : "I"},
 			{"Name" : "b_col", "Type" : "None", "Direction" : "I"},
 			{"Name" : "localC_reload", "Type" : "None", "Direction" : "I"},
@@ -1473,7 +1473,7 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	mmult_Pipeline_writeC {
 		gmem2 {Type O LastRead 2 FirstWrite 2}
-		sext_ln164_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln165_1 {Type I LastRead 0 FirstWrite -1}
 		mul237 {Type I LastRead 0 FirstWrite -1}
 		b_col {Type I LastRead 0 FirstWrite -1}
 		localC_reload {Type I LastRead 0 FirstWrite -1}
@@ -1747,7 +1747,7 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	 { m_axi {  { m_axi_gmem2_AWVALID VALID 1 1 }  { m_axi_gmem2_AWREADY READY 0 1 }  { m_axi_gmem2_AWADDR ADDR 1 64 }  { m_axi_gmem2_AWID ID 1 1 }  { m_axi_gmem2_AWLEN SIZE 1 32 }  { m_axi_gmem2_AWSIZE BURST 1 3 }  { m_axi_gmem2_AWBURST LOCK 1 2 }  { m_axi_gmem2_AWLOCK CACHE 1 2 }  { m_axi_gmem2_AWCACHE PROT 1 4 }  { m_axi_gmem2_AWPROT QOS 1 3 }  { m_axi_gmem2_AWQOS REGION 1 4 }  { m_axi_gmem2_AWREGION USER 1 4 }  { m_axi_gmem2_AWUSER DATA 1 1 }  { m_axi_gmem2_WVALID VALID 1 1 }  { m_axi_gmem2_WREADY READY 0 1 }  { m_axi_gmem2_WDATA FIFONUM 1 32 }  { m_axi_gmem2_WSTRB STRB 1 4 }  { m_axi_gmem2_WLAST LAST 1 1 }  { m_axi_gmem2_WID ID 1 1 }  { m_axi_gmem2_WUSER DATA 1 1 }  { m_axi_gmem2_ARVALID VALID 1 1 }  { m_axi_gmem2_ARREADY READY 0 1 }  { m_axi_gmem2_ARADDR ADDR 1 64 }  { m_axi_gmem2_ARID ID 1 1 }  { m_axi_gmem2_ARLEN SIZE 1 32 }  { m_axi_gmem2_ARSIZE BURST 1 3 }  { m_axi_gmem2_ARBURST LOCK 1 2 }  { m_axi_gmem2_ARLOCK CACHE 1 2 }  { m_axi_gmem2_ARCACHE PROT 1 4 }  { m_axi_gmem2_ARPROT QOS 1 3 }  { m_axi_gmem2_ARQOS REGION 1 4 }  { m_axi_gmem2_ARREGION USER 1 4 }  { m_axi_gmem2_ARUSER DATA 1 1 }  { m_axi_gmem2_RVALID VALID 0 1 }  { m_axi_gmem2_RREADY READY 1 1 }  { m_axi_gmem2_RDATA FIFONUM 0 32 }  { m_axi_gmem2_RLAST LAST 0 1 }  { m_axi_gmem2_RID ID 0 1 }  { m_axi_gmem2_RFIFONUM LEN 0 9 }  { m_axi_gmem2_RUSER DATA 0 1 }  { m_axi_gmem2_RRESP RESP 0 2 }  { m_axi_gmem2_BVALID VALID 0 1 }  { m_axi_gmem2_BREADY READY 1 1 }  { m_axi_gmem2_BRESP RESP 0 2 }  { m_axi_gmem2_BID ID 0 1 }  { m_axi_gmem2_BUSER DATA 0 1 } } }
-	sext_ln164_1 { ap_none {  { sext_ln164_1 in_data 0 62 } } }
+	sext_ln165_1 { ap_none {  { sext_ln165_1 in_data 0 62 } } }
 	mul237 { ap_none {  { mul237 in_data 0 32 } } }
 	b_col { ap_none {  { b_col in_data 0 32 } } }
 	localC_reload { ap_none {  { localC_reload in_data 0 32 } } }

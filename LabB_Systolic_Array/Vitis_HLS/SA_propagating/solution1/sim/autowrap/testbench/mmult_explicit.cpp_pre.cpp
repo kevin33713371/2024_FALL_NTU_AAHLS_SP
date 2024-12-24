@@ -28462,8 +28462,8 @@ init:
 
 readA:
     for (int loc = 0, i = 0, j = 0; loc < a_row * a_col; loc++, j++) {
-#pragma HLS LOOP_TRIPCOUNT min = c_size* c_size max = c_size * c_size
 
+#pragma HLS PIPELINE II=1
         if (j == a_col) {
             i++;
             j = 0;
@@ -28481,8 +28481,8 @@ readA:
 
 readB:
     for (int loc = 0, i = 0, j = 0; loc < b_row * b_col; loc++, j++) {
-#pragma HLS LOOP_TRIPCOUNT min = c_size * c_size max = c_size * c_size
 
+#pragma HLS PIPELINE II=1
         if (j == b_col) {
             i++;
             j = 0;
@@ -28547,6 +28547,7 @@ systolic1:
 writeC:
     for (int loc = 0, i = 0, j = 0; loc < c_row * c_col; loc++, j++) {
 
+#pragma HLS PIPELINE II=1
         if (j == c_col) {
             i++;
             j = 0;

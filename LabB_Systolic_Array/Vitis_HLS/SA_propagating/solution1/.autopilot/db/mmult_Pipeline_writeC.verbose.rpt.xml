@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'mmult_Pipeline_writeC'" level="0">
-<item name = "Date">Wed Dec  4 13:26:37 2024
+<item name = "Date">Sat Dec 21 09:50:18 2024
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
 <item name = "Project">SA_propagating</item>
@@ -97,14 +97,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln158_fu_2190_p2">+, 0, 0, 39, 32, 1</column>
-<column name="add_ln161_fu_2207_p2">+, 0, 0, 39, 32, 1</column>
-<column name="j_2_fu_2619_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln158_fu_2188_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln162_fu_2205_p2">+, 0, 0, 39, 32, 1</column>
+<column name="j_2_fu_2617_p2">+, 0, 0, 39, 32, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln158_fu_2185_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="icmp_ln160_fu_2202_p2">icmp, 0, 0, 20, 32, 32</column>
-<column name="i_1_fu_2213_p3">select, 0, 0, 32, 1, 32</column>
-<column name="j_1_fu_2221_p3">select, 0, 0, 32, 1, 1</column>
+<column name="icmp_ln158_fu_2183_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln161_fu_2200_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="i_1_fu_2211_p3">select, 0, 0, 32, 1, 32</column>
+<column name="j_1_fu_2219_p3">select, 0, 0, 32, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
 </table>
@@ -116,9 +116,9 @@
 <column name="gmem2_blk_n_AW">9, 2, 1, 2</column>
 <column name="gmem2_blk_n_B">9, 2, 1, 2</column>
 <column name="gmem2_blk_n_W">9, 2, 1, 2</column>
-<column name="i_fu_568">9, 2, 32, 64</column>
-<column name="j_fu_572">9, 2, 32, 64</column>
-<column name="loc_fu_576">9, 2, 32, 64</column>
+<column name="i_fu_566">9, 2, 32, 64</column>
+<column name="j_fu_570">9, 2, 32, 64</column>
+<column name="loc_fu_574">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -126,10 +126,10 @@
 <column name="ap_CS_fsm">7, 0, 7, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="i_fu_568">32, 0, 32, 0</column>
-<column name="j_fu_572">32, 0, 32, 0</column>
-<column name="loc_fu_576">32, 0, 32, 0</column>
-<column name="tmp_16_reg_3960">32, 0, 32, 0</column>
+<column name="i_fu_566">32, 0, 32, 0</column>
+<column name="j_fu_570">32, 0, 32, 0</column>
+<column name="loc_fu_574">32, 0, 32, 0</column>
+<column name="tmp_16_reg_3958">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -191,7 +191,7 @@
 <column name="m_axi_gmem2_BRESP">in, 2, m_axi, gmem2, pointer</column>
 <column name="m_axi_gmem2_BID">in, 1, m_axi, gmem2, pointer</column>
 <column name="m_axi_gmem2_BUSER">in, 1, m_axi, gmem2, pointer</column>
-<column name="sext_ln164_1">in, 62, ap_none, sext_ln164_1, scalar</column>
+<column name="sext_ln165_1">in, 62, ap_none, sext_ln165_1, scalar</column>
 <column name="mul237">in, 32, ap_none, mul237, scalar</column>
 <column name="b_col">in, 32, ap_none, b_col, scalar</column>
 <column name="localC_reload">in, 32, ap_none, localC_reload, scalar</column>

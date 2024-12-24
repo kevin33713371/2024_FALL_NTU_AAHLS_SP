@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'mmult'
 ================================================================
 + General Information: 
-    * Date:           Wed Dec  4 13:26:44 2024
+    * Date:           Sat Dec 21 09:50:24 2024
     * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
     * Project:        SA_propagating
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,22 +15,22 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +-----------------------------+------+------+---------+-----------+----------+---------+------+----------+------+-----------+------------+------------+-----+
-    |           Modules           | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |           |            |            |     |
-    |           & Loops           | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP    |     FF     |     LUT    | URAM|
-    +-----------------------------+------+------+---------+-----------+----------+---------+------+----------+------+-----------+------------+------------+-----+
-    |+ mmult                      |     -|  0.00|        -|          -|         -|        -|     -|        no|     -|  777 (13%)|  44645 (2%)|  36646 (4%)|    -|
-    | + mmult_Pipeline_init       |     -|  6.21|       18|    180.000|         -|       18|     -|        no|     -|          -|     7 (~0%)|    49 (~0%)|    -|
-    |  o init                     |     -|  7.30|       16|    160.000|         1|        1|    16|       yes|     -|          -|           -|           -|    -|
-    | + mmult_Pipeline_readA      |     -|  0.00|      265|  2.650e+03|         -|      265|     -|        no|     -|          -|   150 (~0%)|   344 (~0%)|    -|
-    |  o readA                    |     -|  7.30|      257|  2.570e+03|         3|        1|   256|       yes|     -|          -|           -|           -|    -|
-    | + mmult_Pipeline_readB      |     -|  0.00|      265|  2.650e+03|         -|      265|     -|        no|     -|          -|   140 (~0%)|   344 (~0%)|    -|
-    |  o readB                    |     -|  7.30|      257|  2.570e+03|         3|        1|   256|       yes|     -|          -|           -|           -|    -|
-    | + mmult_Pipeline_systolic1  |     -|  1.86|       48|    480.000|         -|       48|     -|        no|     -|  768 (12%)|  23561 (1%)|  25218 (2%)|    -|
-    |  o systolic1                |     -|  7.30|       46|    460.000|         1|        1|    46|       yes|     -|          -|           -|           -|    -|
-    | + mmult_Pipeline_writeC     |     -|  0.00|        -|          -|         -|        -|     -|        no|     -|          -|   137 (~0%)|  1443 (~0%)|    -|
-    |  o writeC                   |     -|  7.30|        -|          -|         2|        1|     -|       yes|     -|          -|           -|           -|    -|
-    +-----------------------------+------+------+---------+-----------+----------+---------+------+----------+------+-----------+------------+------------+-----+
+    +-----------------------------+------+------+---------+---------+----------+---------+------+----------+------+-----------+------------+------------+-----+
+    |           Modules           | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |           |            |            |     |
+    |           & Loops           | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP    |     FF     |     LUT    | URAM|
+    +-----------------------------+------+------+---------+---------+----------+---------+------+----------+------+-----------+------------+------------+-----+
+    |+ mmult                      |     -|  0.00|        -|        -|         -|        -|     -|        no|     -|  777 (13%)|  44645 (2%)|  36646 (4%)|    -|
+    | + mmult_Pipeline_init       |     -|  6.21|       18|  180.000|         -|       18|     -|        no|     -|          -|     7 (~0%)|    49 (~0%)|    -|
+    |  o init                     |     -|  7.30|       16|  160.000|         1|        1|    16|       yes|     -|          -|           -|           -|    -|
+    | + mmult_Pipeline_readA      |     -|  0.00|        -|        -|         -|        -|     -|        no|     -|          -|   150 (~0%)|   344 (~0%)|    -|
+    |  o readA                    |     -|  7.30|        -|        -|         3|        1|     -|       yes|     -|          -|           -|           -|    -|
+    | + mmult_Pipeline_readB      |     -|  0.00|        -|        -|         -|        -|     -|        no|     -|          -|   140 (~0%)|   344 (~0%)|    -|
+    |  o readB                    |     -|  7.30|        -|        -|         3|        1|     -|       yes|     -|          -|           -|           -|    -|
+    | + mmult_Pipeline_systolic1  |     -|  1.86|       48|  480.000|         -|       48|     -|        no|     -|  768 (12%)|  23561 (1%)|  25218 (2%)|    -|
+    |  o systolic1                |     -|  7.30|       46|  460.000|         1|        1|    46|       yes|     -|          -|           -|           -|    -|
+    | + mmult_Pipeline_writeC     |     -|  0.00|        -|        -|         -|        -|     -|        no|     -|          -|   137 (~0%)|  1443 (~0%)|    -|
+    |  o writeC                   |     -|  7.30|        -|        -|         2|        1|     -|       yes|     -|          -|           -|           -|    -|
+    +-----------------------------+------+------+---------+---------+----------+---------+------+----------+------+-----------+------------+------------+-----+
 
 
 ================================================================
@@ -128,7 +128,7 @@
 +--------------+----------+-------------------------------------------------+------------+----------------------------------------------+
 | m_axi_gmem0  | a        | Volatile or Atomic access cannot be transformed | 214-227    | SA_propagating/src/mmult_explicit.cpp:81:24  |
 | m_axi_gmem1  | b        | Volatile or Atomic access cannot be transformed | 214-227    | SA_propagating/src/mmult_explicit.cpp:100:24 |
-| m_axi_gmem2  | c        | Volatile or Atomic access cannot be transformed | 214-227    | SA_propagating/src/mmult_explicit.cpp:164:16 |
+| m_axi_gmem2  | c        | Volatile or Atomic access cannot be transformed | 214-227    | SA_propagating/src/mmult_explicit.cpp:165:16 |
 +--------------+----------+-------------------------------------------------+------------+----------------------------------------------+
 
     * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
@@ -146,13 +146,13 @@
 |  + mmult_Pipeline_init       | 0   |        |               |     |        |         |
 |    add_ln62_fu_698_p2        | -   |        | add_ln62      | add | fabric | 0       |
 |  + mmult_Pipeline_readA      | 0   |        |               |     |        |         |
-|    add_ln74_fu_408_p2        | -   |        | add_ln74      | add | fabric | 0       |
-|    add_ln78_fu_453_p2        | -   |        | add_ln78      | add | fabric | 0       |
-|    j_6_fu_434_p2             | -   |        | j_6           | add | fabric | 0       |
+|    add_ln74_fu_402_p2        | -   |        | add_ln74      | add | fabric | 0       |
+|    add_ln78_fu_447_p2        | -   |        | add_ln78      | add | fabric | 0       |
+|    j_6_fu_428_p2             | -   |        | j_6           | add | fabric | 0       |
 |  + mmult_Pipeline_readB      | 0   |        |               |     |        |         |
-|    add_ln93_fu_408_p2        | -   |        | add_ln93      | add | fabric | 0       |
-|    add_ln97_fu_430_p2        | -   |        | add_ln97      | add | fabric | 0       |
-|    j_3_fu_476_p2             | -   |        | j_3           | add | fabric | 0       |
+|    add_ln93_fu_402_p2        | -   |        | add_ln93      | add | fabric | 0       |
+|    add_ln97_fu_424_p2        | -   |        | add_ln97      | add | fabric | 0       |
+|    j_3_fu_470_p2             | -   |        | j_3           | add | fabric | 0       |
 |  + mmult_Pipeline_systolic1  | 768 |        |               |     |        |         |
 |    add_ln112_fu_14878_p2     | -   |        | add_ln112     | add | fabric | 0       |
 |    mul_32s_32s_32_1_1_U123   | 3   |        | mul_ln150     | mul | auto   | 0       |
@@ -668,9 +668,9 @@
 |    mul_32s_32s_32_1_1_U378   | 3   |        | mul_ln150_255 | mul | auto   | 0       |
 |    add_ln150_255_fu_20094_p2 | -   |        | add_ln150_255 | add | fabric | 0       |
 |  + mmult_Pipeline_writeC     | 0   |        |               |     |        |         |
-|    add_ln158_fu_2190_p2      | -   |        | add_ln158     | add | fabric | 0       |
-|    add_ln161_fu_2207_p2      | -   |        | add_ln161     | add | fabric | 0       |
-|    j_2_fu_2619_p2            | -   |        | j_2           | add | fabric | 0       |
+|    add_ln158_fu_2188_p2      | -   |        | add_ln158     | add | fabric | 0       |
+|    add_ln162_fu_2205_p2      | -   |        | add_ln162     | add | fabric | 0       |
+|    j_2_fu_2617_p2            | -   |        | j_2           | add | fabric | 0       |
 +------------------------------+-----+--------+---------------+-----+--------+---------+
 
 
@@ -739,9 +739,10 @@
 | array_partition | variable = inA dim=0 complete                    | SA_propagating/src/mmult_explicit.cpp:55 in mmult         |
 | array_partition | variable = inB dim=0 complete                    | SA_propagating/src/mmult_explicit.cpp:58 in mmult         |
 | pipeline        |                                                  | SA_propagating/src/mmult_explicit.cpp:63 in mmult         |
-| loop_tripcount  | min = c_size* c_size max = c_size * c_size       | SA_propagating/src/mmult_explicit.cpp:75 in mmult         |
-| loop_tripcount  | min = c_size * c_size max = c_size * c_size      | SA_propagating/src/mmult_explicit.cpp:94 in mmult         |
+| pipeline        | II=1                                             | SA_propagating/src/mmult_explicit.cpp:76 in mmult         |
+| pipeline        | II=1                                             | SA_propagating/src/mmult_explicit.cpp:95 in mmult         |
 | pipeline        |                                                  | SA_propagating/src/mmult_explicit.cpp:113 in mmult        |
+| pipeline        | II=1                                             | SA_propagating/src/mmult_explicit.cpp:160 in mmult        |
 +-----------------+--------------------------------------------------+-----------------------------------------------------------+
 
 

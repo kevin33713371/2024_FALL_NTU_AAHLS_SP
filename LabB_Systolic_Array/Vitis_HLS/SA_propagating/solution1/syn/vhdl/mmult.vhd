@@ -295,7 +295,7 @@ architecture behav of mmult is
     signal mul60_fu_7152_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal mul60_reg_10264 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln100_2_reg_10269 : STD_LOGIC_VECTOR (61 downto 0);
-    signal trunc_ln164_1_reg_10274 : STD_LOGIC_VECTOR (61 downto 0);
+    signal trunc_ln165_1_reg_10274 : STD_LOGIC_VECTOR (61 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
     signal localA_q1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -3460,7 +3460,7 @@ architecture behav of mmult is
         m_axi_gmem2_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_gmem2_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_gmem2_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        sext_ln164_1 : IN STD_LOGIC_VECTOR (61 downto 0);
+        sext_ln165_1 : IN STD_LOGIC_VECTOR (61 downto 0);
         mul237 : IN STD_LOGIC_VECTOR (31 downto 0);
         b_col : IN STD_LOGIC_VECTOR (31 downto 0);
         localC_reload : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -6103,7 +6103,7 @@ begin
         m_axi_gmem2_BRESP => ap_const_lv2_0,
         m_axi_gmem2_BID => ap_const_lv1_0,
         m_axi_gmem2_BUSER => ap_const_lv1_0,
-        sext_ln164_1 => trunc_ln164_1_reg_10274,
+        sext_ln165_1 => trunc_ln165_1_reg_10274,
         mul237 => mul237_reg_15543,
         b_col => b_col_read_reg_8398,
         localC_reload => grp_mmult_Pipeline_systolic1_fu_5986_localC_out,
@@ -6815,7 +6815,7 @@ begin
                 mul60_reg_10264 <= mul60_fu_7152_p2;
                 mul_reg_10254 <= mul_fu_7136_p2;
                 trunc_ln100_2_reg_10269 <= b(63 downto 2);
-                trunc_ln164_1_reg_10274 <= c(63 downto 2);
+                trunc_ln165_1_reg_10274 <= c(63 downto 2);
                 trunc_ln81_2_reg_10259 <= a(63 downto 2);
             end if;
         end if;
