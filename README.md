@@ -25,3 +25,7 @@ Course Study Journal(HackMD) : [My Study Journal](https://hackmd.io/6AQMizsjS-eX
 - [Final_Project-q_matmul_k](https://github.com/kevin33713371/2024_FALL_NTU_AAHLS_SP/tree/main/Final_Project-q_matmul_k) - Design a Systolic Array capable of performing the matrix multiplication of query and key matrices in the Self-Attention mechanism of a Vision Transformer (Query Dimension = 197 * 64, Key Dimension = 64*197).
 
 - [Final_Project-attention_kernel](https://github.com/kevin33713371/2024_FALL_NTU_AAHLS_SP/tree/main/Final_project-attention_kernel) - Integrate the HLS Kernel of Systolic Array for query and key matrix multiplication in Self-Attention with the HLS Kernel for Softmax operations.
+
+## Final Project
+For the final project, we integrate the application code of Vision Transformer(ViT) with the hardware kernel purely designed by HLS(High-Level-Synthesis), which contains the Systolic Array design for the matrix multiplication of query and key and the Softmax Approximate Accelerator design for softmax layer computation. <br />
+[Final Project Repository](https://github.com/kabazoka/ViT-Accelerator)
