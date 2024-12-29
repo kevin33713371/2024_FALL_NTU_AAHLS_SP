@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/ubuntu/Desktop/2024_Fall_NTU_AAHLS_SP/LabB_Systolic_Array/Vitis_HLS/SA_tiling/solution1/./sim/autowrap/testbench/mmult_tiling.cpp_pre.cpp.tb.cpp
