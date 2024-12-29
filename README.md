@@ -19,3 +19,9 @@ Course Study Journal(HackMD) : [My Study Journal](https://hackmd.io/6AQMizsjS-eX
 - LabA_Mixing_C_RTL_Kernels - Learning to integrate an HLS-designed C kernel with an RTL-designed module into the Vitis simulation environment for joint simulation.
 
 - LabB_Systolic_Array - Using the learned "pragma" directives to design a Systolic Array and analyze the differences between Broadcasting and Propagating.
+
+- Systolic_Array_Tiling - Optimize the SA_Propagating in LabB to support matrix computations larger than the size of the Systolic Array.
+
+- Final_Project-q_matmul_k - Design a Systolic Array capable of performing the matrix multiplication of query and key matrices in the Self-Attention mechanism of a Vision Transformer (Query Dimension = 197 * 64, Key Dimension = 64*197).
+
+- Final_Project-attention_kernel - Integrate the HLS Kernel of Systolic Array for query and key matrix multiplication in Self-Attention with the HLS Kernel for Softmax operations.
