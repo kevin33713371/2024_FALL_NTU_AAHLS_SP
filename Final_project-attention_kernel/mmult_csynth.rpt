@@ -3,10 +3,10 @@
 ================================================================
 == Vitis HLS Report for 'mmult'
 ================================================================
-* Date:           Wed Dec 25 17:26:27 2024
+* Date:           Sat Aug 16 10:36:18 2025
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
-* Project:        attention_kernels
+* Project:        attention_kernel_new
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: virtexuplus
 * Target device:  xcu50-fsvh2104-2-e
@@ -42,7 +42,7 @@
         |grp_mmult_Pipeline_read_subA_fu_24948         |mmult_Pipeline_read_subA         |       19|       19|  0.190 us|  0.190 us|   19|   19|       no|
         |grp_mmult_Pipeline_read_subB_fu_25145         |mmult_Pipeline_read_subB         |       67|       67|  0.670 us|  0.670 us|   67|   67|       no|
         |grp_mmult_Pipeline_init_inAB_fu_27241         |mmult_Pipeline_init_inAB         |       18|       18|  0.180 us|  0.180 us|   18|   18|       no|
-        |grp_mmult_Pipeline_VITIS_LOOP_104_6_fu_28205  |mmult_Pipeline_VITIS_LOOP_104_6  |      193|      193|  1.930 us|  1.930 us|  193|  193|       no|
+        |grp_mmult_Pipeline_VITIS_LOOP_110_6_fu_28205  |mmult_Pipeline_VITIS_LOOP_110_6  |      193|      193|  1.930 us|  1.930 us|  193|  193|       no|
         |grp_mmult_Pipeline_store_tileC_fu_31857       |mmult_Pipeline_store_tileC       |       25|       25|  0.250 us|  0.250 us|   25|   25|       no|
         +----------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
@@ -51,7 +51,7 @@
         |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- tile_outer_loop_VITIS_LOOP_36_1  |    50531|    50531|       299|          -|          -|   169|        no|
+        |- tile_outer_loop_VITIS_LOOP_42_1  |    50531|    50531|       299|          -|          -|   169|        no|
         +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -99,7 +99,7 @@
     |fadd_32ns_32ns_32_3_full_dsp_1_U7928          |fadd_32ns_32ns_32_3_full_dsp_1   |        0|    2|    177|    226|    0|
     |fadd_32ns_32ns_32_3_full_dsp_1_U7929          |fadd_32ns_32ns_32_3_full_dsp_1   |        0|    2|    177|    226|    0|
     |fadd_32ns_32ns_32_3_full_dsp_1_U7930          |fadd_32ns_32ns_32_3_full_dsp_1   |        0|    2|    177|    226|    0|
-    |grp_mmult_Pipeline_VITIS_LOOP_104_6_fu_28205  |mmult_Pipeline_VITIS_LOOP_104_6  |        0|  599|  95490|  61401|    0|
+    |grp_mmult_Pipeline_VITIS_LOOP_110_6_fu_28205  |mmult_Pipeline_VITIS_LOOP_110_6  |        0|  599|  95490|  61401|    0|
     |grp_mmult_Pipeline_init_inAB_fu_27241         |mmult_Pipeline_init_inAB         |        0|    0|  15367|   4369|    0|
     |grp_mmult_Pipeline_init_inC_fu_24432          |mmult_Pipeline_init_inC          |        0|    0|   8199|   2353|    0|
     |grp_mmult_Pipeline_read_subA_fu_24948         |mmult_Pipeline_read_subA         |        0|    0|    590|    106|    0|
@@ -191,9 +191,9 @@
     +---------------------------------+----------+----+---+----+------------+------------+
     |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------------+----------+----+---+----+------------+------------+
-    |add_ln35_1_fu_32186_p2           |         +|   0|  0|  15|           8|           1|
-    |add_ln35_fu_39238_p2             |         +|   0|  0|  12|           4|           1|
-    |add_ln36_fu_39427_p2             |         +|   0|  0|  12|           4|           1|
+    |add_ln41_1_fu_32186_p2           |         +|   0|  0|  15|           8|           1|
+    |add_ln41_fu_39238_p2             |         +|   0|  0|  12|           4|           1|
+    |add_ln42_fu_39427_p2             |         +|   0|  0|  12|           4|           1|
     |cmp59_10_fu_39355_p2             |      icmp|   0|  0|  11|           8|           7|
     |cmp59_11_fu_39368_p2             |      icmp|   0|  0|  11|           8|           7|
     |cmp59_12_fu_39381_p2             |      icmp|   0|  0|  11|           8|           7|
@@ -205,8 +205,8 @@
     |cmp59_7_fu_39316_p2              |      icmp|   0|  0|  11|           8|           7|
     |cmp59_8_fu_39329_p2              |      icmp|   0|  0|  11|           8|           7|
     |cmp59_9_fu_39342_p2              |      icmp|   0|  0|  11|           8|           7|
-    |icmp_ln35_fu_32180_p2            |      icmp|   0|  0|  11|           8|           8|
-    |icmp_ln36_fu_39244_p2            |      icmp|   0|  0|   9|           4|           3|
+    |icmp_ln41_fu_32180_p2            |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln42_fu_39244_p2            |      icmp|   0|  0|   9|           4|           3|
     |ap_block_state3_on_subcall_done  |        or|   0|  0|   2|           1|           1|
     |empty_82_fu_39284_p2             |        or|   0|  0|   8|           8|           3|
     |empty_83_fu_39297_p2             |        or|   0|  0|   8|           8|           3|
@@ -219,8 +219,8 @@
     |empty_90_fu_39388_p2             |        or|   0|  0|   8|           8|           4|
     |empty_91_fu_39401_p2             |        or|   0|  0|   8|           8|           4|
     |empty_92_fu_39414_p2             |        or|   0|  0|   8|           8|           4|
-    |select_ln35_1_fu_39259_p3        |    select|   0|  0|   4|           1|           4|
-    |select_ln35_fu_39250_p3          |    select|   0|  0|   4|           1|           1|
+    |select_ln41_1_fu_39259_p3        |    select|   0|  0|   4|           1|           4|
+    |select_ln41_fu_39250_p3          |    select|   0|  0|   4|           1|           1|
     +---------------------------------+----------+----+---+----+------------+------------+
     |Total                            |          |   0|  0| 278|         207|         138|
     +---------------------------------+----------+----+---+----+------------+------------+
@@ -686,7 +686,7 @@
     |cmp59_7_reg_87016                                          |    1|   0|    1|          0|
     |cmp59_8_reg_87022                                          |    1|   0|    1|          0|
     |cmp59_9_reg_87028                                          |    1|   0|    1|          0|
-    |grp_mmult_Pipeline_VITIS_LOOP_104_6_fu_28205_ap_start_reg  |    1|   0|    1|          0|
+    |grp_mmult_Pipeline_VITIS_LOOP_110_6_fu_28205_ap_start_reg  |    1|   0|    1|          0|
     |grp_mmult_Pipeline_init_inAB_fu_27241_ap_start_reg         |    1|   0|    1|          0|
     |grp_mmult_Pipeline_init_inC_fu_24432_ap_start_reg          |    1|   0|    1|          0|
     |grp_mmult_Pipeline_read_subA_fu_24948_ap_start_reg         |    1|   0|    1|          0|
@@ -1430,7 +1430,7 @@
     |inC_9_1_fu_332                                             |   32|   0|   32|          0|
     |indvar_flatten_fu_7340                                     |    8|   0|    8|          0|
     |p_mid2_reg_86998                                           |    4|   0|    8|          4|
-    |select_ln35_reg_86992                                      |    4|   0|    4|          0|
+    |select_ln41_reg_86992                                      |    4|   0|    4|          0|
     |subA_10_load_10_reg_90320                                  |   32|   0|   32|          0|
     |subA_10_load_11_reg_90640                                  |   32|   0|   32|          0|
     |subA_10_load_12_reg_90960                                  |   32|   0|   32|          0|

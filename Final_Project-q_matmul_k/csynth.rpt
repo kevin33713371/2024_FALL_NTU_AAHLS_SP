@@ -4,9 +4,9 @@
 == Synthesis Summary Report of 'mmult'
 ================================================================
 + General Information: 
-    * Date:           Thu Dec 26 01:55:07 2024
+    * Date:           Sat Aug 16 09:26:25 2025
     * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
-    * Project:        q_matmul_k
+    * Project:        q_matmul_k_v2
     * Solution:       solution1 (Vivado IP Flow Target)
     * Product family: virtexuplus
     * Target device:  xcu50-fsvh2104-2-e
@@ -24,11 +24,11 @@
     |  o readA                                |     -|  7.30|    12609|  1.261e+05|         3|        1|  12608|       yes|         -|          -|             -|             -|    -|
     | + mmult_Pipeline_readB                  |     -|  0.00|    12618|  1.262e+05|         -|    12618|      -|        no|         -|    1 (~0%)|     211 (~0%)|     350 (~0%)|    -|
     |  o readB                                |     -|  7.30|    12610|  1.261e+05|         4|        1|  12608|       yes|         -|          -|             -|             -|    -|
-    | + mmult_Pipeline_initC_VITIS_LOOP_77_1  |     -|  5.30|    38813|  3.881e+05|         -|    38813|      -|        no|         -|    1 (~0%)|     115 (~0%)|     199 (~0%)|    -|
-    |  o initC_VITIS_LOOP_77_1                |     -|  7.30|    38811|  3.881e+05|         4|        1|  38809|       yes|         -|          -|             -|             -|    -|
+    | + mmult_Pipeline_initC_VITIS_LOOP_82_1  |     -|  5.30|    38813|  3.881e+05|         -|    38813|      -|        no|         -|    1 (~0%)|     115 (~0%)|     199 (~0%)|    -|
+    |  o initC_VITIS_LOOP_82_1                |     -|  7.30|    38811|  3.881e+05|         4|        1|  38809|       yes|         -|          -|             -|             -|    -|
     | + mmult_Pipeline_writeC                 |     -|  0.00|    38820|  3.882e+05|         -|    38820|      -|        no|         -|    1 (~0%)|     218 (~0%)|     416 (~0%)|    -|
     |  o writeC                               |     -|  7.30|    38814|  3.881e+05|         7|        1|  38809|       yes|         -|          -|             -|             -|    -|
-    | o tile_outer_loop_VITIS_LOOP_105_2      |     -|  7.30|    50700|  5.070e+05|       300|        -|    169|        no|         -|          -|             -|             -|    -|
+    | o tile_outer_loop_VITIS_LOOP_110_2      |     -|  7.30|    50700|  5.070e+05|       300|        -|    169|        no|         -|          -|             -|             -|    -|
     |  + mmult_Pipeline_init_inC              |     -|  6.21|       18|    180.000|         -|       18|      -|        no|         -|          -|    8199 (~0%)|    2353 (~0%)|    -|
     |   o init_inC                            |     -|  7.30|       16|    160.000|         1|        1|     16|       yes|         -|          -|             -|             -|    -|
     |  + mmult_Pipeline_read_subA             |     -|  5.02|       19|    190.000|         -|       19|      -|        no|         -|          -|     590 (~0%)|     106 (~0%)|    -|
@@ -37,10 +37,10 @@
     |   o read_subB                           |     -|  7.30|       65|    650.000|         3|        1|     64|       yes|         -|          -|             -|             -|    -|
     |  + mmult_Pipeline_init_inAB             |     -|  6.21|       18|    180.000|         -|       18|      -|        no|         -|          -|   15367 (~0%)|    4369 (~0%)|    -|
     |   o init_inAB                           |     -|  7.30|       16|    160.000|         1|        1|     16|       yes|         -|          -|             -|             -|    -|
-    |  + mmult_Pipeline_VITIS_LOOP_173_7      |     -|  0.76|      193|  1.930e+03|         -|      193|      -|        no|         -|  608 (10%)|    95874 (5%)|    61632 (7%)|    -|
-    |   o VITIS_LOOP_173_7                    |    II|  7.30|      191|  1.910e+03|         6|        2|     94|       yes|         -|          -|             -|             -|    -|
-    |  + mmult_Pipeline_VITIS_LOOP_223_16     |     -|  1.15|       26|    260.000|         -|       26|      -|        no|         -|    1 (~0%)|    4584 (~0%)|    2556 (~0%)|    -|
-    |   o VITIS_LOOP_223_16                   |     -|  7.30|       24|    240.000|        10|        1|     16|       yes|         -|          -|             -|             -|    -|
+    |  + mmult_Pipeline_VITIS_LOOP_178_7      |     -|  0.76|      193|  1.930e+03|         -|      193|      -|        no|         -|  608 (10%)|    95874 (5%)|    61632 (7%)|    -|
+    |   o VITIS_LOOP_178_7                    |    II|  7.30|      191|  1.910e+03|         6|        2|     94|       yes|         -|          -|             -|             -|    -|
+    |  + mmult_Pipeline_VITIS_LOOP_228_16     |     -|  1.15|       26|    260.000|         -|       26|      -|        no|         -|    1 (~0%)|    4584 (~0%)|    2556 (~0%)|    -|
+    |   o VITIS_LOOP_228_16                   |     -|  7.30|       24|    240.000|        10|        1|     16|       yes|         -|          -|             -|             -|    -|
     +-----------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+----------+-----------+--------------+--------------+-----+
 
 
@@ -128,9 +128,9 @@
 +--------------+----------+-------------------------------------------------+------------+-------------------------------+
 | HW Interface | Variable | Problem                                         | Resolution | Location                      |
 +--------------+----------+-------------------------------------------------+------------+-------------------------------+
-| m_axi_gmem0  | a        | Volatile or Atomic access cannot be transformed | 214-227    | src/q_matmul_k_new.cpp:57:24  |
-| m_axi_gmem1  | b        | Volatile or Atomic access cannot be transformed | 214-227    | src/q_matmul_k_new.cpp:68:24  |
-| m_axi_gmem2  | c        | Volatile or Atomic access cannot be transformed | 214-227    | src/q_matmul_k_new.cpp:250:16 |
+| m_axi_gmem0  | a        | Volatile or Atomic access cannot be transformed | 214-227    | src/q_matmul_k_new.cpp:62:24  |
+| m_axi_gmem1  | b        | Volatile or Atomic access cannot be transformed | 214-227    | src/q_matmul_k_new.cpp:73:24  |
+| m_axi_gmem2  | c        | Volatile or Atomic access cannot be transformed | 214-227    | src/q_matmul_k_new.cpp:255:16 |
 +--------------+----------+-------------------------------------------------+------------+-------------------------------+
 
     * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
@@ -142,53 +142,53 @@
 | Name                                    | DSP | Pragma | Variable     | Op   | Impl    | Latency |
 +-----------------------------------------+-----+--------+--------------+------+---------+---------+
 | + mmult                                 | 644 |        |              |      |         |         |
-|   add_ln104_1_fu_31524_p2               | -   |        | add_ln104_1  | add  | fabric  | 0       |
-|   add_ln104_fu_38576_p2                 | -   |        | add_ln104    | add  | fabric  | 0       |
-|   add_ln105_fu_38765_p2                 | -   |        | add_ln105    | add  | fabric  | 0       |
+|   add_ln109_1_fu_31524_p2               | -   |        | add_ln109_1  | add  | fabric  | 0       |
+|   add_ln109_fu_38576_p2                 | -   |        | add_ln109    | add  | fabric  | 0       |
+|   add_ln110_fu_38765_p2                 | -   |        | add_ln110    | add  | fabric  | 0       |
 |  + mmult_Pipeline_readA                 | 0   |        |              |      |         |         |
-|    add_ln51_fu_1477_p2                  | -   |        | add_ln51     | add  | fabric  | 0       |
-|    add_ln54_fu_1504_p2                  | -   |        | add_ln54     | add  | fabric  | 0       |
+|    add_ln56_fu_1477_p2                  | -   |        | add_ln56     | add  | fabric  | 0       |
+|    add_ln59_fu_1504_p2                  | -   |        | add_ln59     | add  | fabric  | 0       |
 |    j_6_fu_1598_p2                       | -   |        | j_6          | add  | fabric  | 0       |
 |  + mmult_Pipeline_readB                 | 1   |        |              |      |         |         |
-|    add_ln62_fu_477_p2                   | -   |        | add_ln62     | add  | fabric  | 0       |
-|    add_ln65_fu_495_p2                   | -   |        | add_ln65     | add  | fabric  | 0       |
-|    mac_muladd_10s_4ns_10ns_10_4_1_U68   | 1   |        | mul_ln68     | mul  | dsp48   | 3       |
-|    mac_muladd_10s_4ns_10ns_10_4_1_U68   | 1   |        | add_ln68     | add  | dsp48   | 3       |
+|    add_ln67_fu_477_p2                   | -   |        | add_ln67     | add  | fabric  | 0       |
+|    add_ln70_fu_495_p2                   | -   |        | add_ln70     | add  | fabric  | 0       |
+|    mac_muladd_10s_4ns_10ns_10_4_1_U68   | 1   |        | mul_ln73     | mul  | dsp48   | 3       |
+|    mac_muladd_10s_4ns_10ns_10_4_1_U68   | 1   |        | add_ln73     | add  | dsp48   | 3       |
 |    j_3_fu_535_p2                        | -   |        | j_3          | add  | fabric  | 0       |
-|  + mmult_Pipeline_initC_VITIS_LOOP_77_1 | 1   |        |              |      |         |         |
-|    add_ln76_1_fu_436_p2                 | -   |        | add_ln76_1   | add  | fabric  | 0       |
-|    add_ln76_fu_448_p2                   | -   |        | add_ln76     | add  | fabric  | 0       |
-|    mac_muladd_8ns_4ns_4ns_12_4_1_U89    | 1   |        | mul_ln79     | mul  | dsp48   | 3       |
-|    mac_muladd_8ns_4ns_4ns_12_4_1_U89    | 1   |        | add_ln79     | add  | dsp48   | 3       |
-|    add_ln77_fu_494_p2                   | -   |        | add_ln77     | add  | fabric  | 0       |
+|  + mmult_Pipeline_initC_VITIS_LOOP_82_1 | 1   |        |              |      |         |         |
+|    add_ln81_1_fu_436_p2                 | -   |        | add_ln81_1   | add  | fabric  | 0       |
+|    add_ln81_fu_448_p2                   | -   |        | add_ln81     | add  | fabric  | 0       |
+|    mac_muladd_8ns_4ns_4ns_12_4_1_U89    | 1   |        | mul_ln84     | mul  | dsp48   | 3       |
+|    mac_muladd_8ns_4ns_4ns_12_4_1_U89    | 1   |        | add_ln84     | add  | dsp48   | 3       |
+|    add_ln82_fu_494_p2                   | -   |        | add_ln82     | add  | fabric  | 0       |
 |  + mmult_Pipeline_init_inC              | 0   |        |              |      |         |         |
-|    add_ln111_fu_6734_p2                 | -   |        | add_ln111    | add  | fabric  | 0       |
+|    add_ln116_fu_6734_p2                 | -   |        | add_ln116    | add  | fabric  | 0       |
 |  + mmult_Pipeline_read_subA             | 0   |        |              |      |         |         |
-|    add_ln124_fu_2376_p2                 | -   |        | add_ln124    | add  | fabric  | 0       |
+|    add_ln129_fu_2376_p2                 | -   |        | add_ln129    | add  | fabric  | 0       |
 |    empty_43_fu_2454_p2                  | -   |        | empty_43     | add  | fabric  | 0       |
 |  + mmult_Pipeline_read_subB             | 0   |        |              |      |         |         |
-|    add_ln138_fu_27165_p2                | -   |        | add_ln138    | add  | fabric  | 0       |
-|    add_ln144_1_fu_27174_p2              | -   |        | add_ln144_1  | add  | fabric  | 0       |
-|    add_ln144_fu_27180_p2                | -   |        | add_ln144    | add  | fabric  | 0       |
+|    add_ln143_fu_27165_p2                | -   |        | add_ln143    | add  | fabric  | 0       |
+|    add_ln149_1_fu_27174_p2              | -   |        | add_ln149_1  | add  | fabric  | 0       |
+|    add_ln149_fu_27180_p2                | -   |        | add_ln149    | add  | fabric  | 0       |
 |  + mmult_Pipeline_init_inAB             | 0   |        |              |      |         |         |
-|    add_ln164_fu_12558_p2                | -   |        | add_ln164    | add  | fabric  | 0       |
-|  + mmult_Pipeline_VITIS_LOOP_173_7      | 608 |        |              |      |         |         |
-|    add_ln173_fu_34748_p2                | -   |        | add_ln173    | add  | fabric  | 0       |
-|    add_ln193_fu_34889_p2                | -   |        | add_ln193    | add  | fabric  | 0       |
-|    add_ln193_1_fu_34990_p2              | -   |        | add_ln193_1  | add  | fabric  | 0       |
-|    add_ln193_2_fu_35091_p2              | -   |        | add_ln193_2  | add  | fabric  | 0       |
-|    add_ln193_3_fu_35192_p2              | -   |        | add_ln193_3  | add  | fabric  | 0       |
-|    add_ln193_4_fu_35293_p2              | -   |        | add_ln193_4  | add  | fabric  | 0       |
-|    add_ln193_5_fu_35394_p2              | -   |        | add_ln193_5  | add  | fabric  | 0       |
-|    add_ln193_6_fu_35495_p2              | -   |        | add_ln193_6  | add  | fabric  | 0       |
-|    add_ln193_7_fu_35596_p2              | -   |        | add_ln193_7  | add  | fabric  | 0       |
-|    add_ln193_8_fu_35696_p2              | -   |        | add_ln193_8  | add  | fabric  | 0       |
-|    add_ln193_9_fu_35796_p2              | -   |        | add_ln193_9  | add  | fabric  | 0       |
-|    add_ln193_10_fu_35896_p2             | -   |        | add_ln193_10 | add  | fabric  | 0       |
-|    add_ln193_11_fu_35996_p2             | -   |        | add_ln193_11 | add  | fabric  | 0       |
-|    add_ln193_12_fu_36096_p2             | -   |        | add_ln193_12 | add  | fabric  | 0       |
-|    add_ln193_13_fu_36196_p2             | -   |        | add_ln193_13 | add  | fabric  | 0       |
-|    add_ln193_14_fu_36296_p2             | -   |        | add_ln193_14 | add  | fabric  | 0       |
+|    add_ln169_fu_12558_p2                | -   |        | add_ln169    | add  | fabric  | 0       |
+|  + mmult_Pipeline_VITIS_LOOP_178_7      | 608 |        |              |      |         |         |
+|    add_ln178_fu_34748_p2                | -   |        | add_ln178    | add  | fabric  | 0       |
+|    add_ln198_fu_34889_p2                | -   |        | add_ln198    | add  | fabric  | 0       |
+|    add_ln198_1_fu_34990_p2              | -   |        | add_ln198_1  | add  | fabric  | 0       |
+|    add_ln198_2_fu_35091_p2              | -   |        | add_ln198_2  | add  | fabric  | 0       |
+|    add_ln198_3_fu_35192_p2              | -   |        | add_ln198_3  | add  | fabric  | 0       |
+|    add_ln198_4_fu_35293_p2              | -   |        | add_ln198_4  | add  | fabric  | 0       |
+|    add_ln198_5_fu_35394_p2              | -   |        | add_ln198_5  | add  | fabric  | 0       |
+|    add_ln198_6_fu_35495_p2              | -   |        | add_ln198_6  | add  | fabric  | 0       |
+|    add_ln198_7_fu_35596_p2              | -   |        | add_ln198_7  | add  | fabric  | 0       |
+|    add_ln198_8_fu_35696_p2              | -   |        | add_ln198_8  | add  | fabric  | 0       |
+|    add_ln198_9_fu_35796_p2              | -   |        | add_ln198_9  | add  | fabric  | 0       |
+|    add_ln198_10_fu_35896_p2             | -   |        | add_ln198_10 | add  | fabric  | 0       |
+|    add_ln198_11_fu_35996_p2             | -   |        | add_ln198_11 | add  | fabric  | 0       |
+|    add_ln198_12_fu_36096_p2             | -   |        | add_ln198_12 | add  | fabric  | 0       |
+|    add_ln198_13_fu_36196_p2             | -   |        | add_ln198_13 | add  | fabric  | 0       |
+|    add_ln198_14_fu_36296_p2             | -   |        | add_ln198_14 | add  | fabric  | 0       |
 |    fmul_32ns_32ns_32_2_max_dsp_1_U3912  | 3   |        | mul          | fmul | maxdsp  | 1       |
 |    fmul_32ns_32ns_32_2_max_dsp_1_U3913  | 3   |        | mul285_s     | fmul | maxdsp  | 1       |
 |    fmul_32ns_32ns_32_2_max_dsp_1_U3914  | 3   |        | mul285_16    | fmul | maxdsp  | 1       |
@@ -669,16 +669,16 @@
 |    fadd_32ns_32ns_32_3_full_dsp_1_U3910 | 2   |        | add290_15_13 | fadd | fulldsp | 2       |
 |    fmul_32ns_32ns_32_2_max_dsp_1_U4039  | 3   |        | mul285_15_14 | fmul | maxdsp  | 1       |
 |    fadd_32ns_32ns_32_3_full_dsp_1_U3911 | 2   |        | add290_15_14 | fadd | fulldsp | 2       |
-|  + mmult_Pipeline_VITIS_LOOP_223_16     | 1   |        |              |      |         |         |
-|    add_ln223_fu_2588_p2                 | -   |        | add_ln223    | add  | fabric  | 0       |
+|  + mmult_Pipeline_VITIS_LOOP_228_16     | 1   |        |              |      |         |         |
+|    add_ln228_fu_2588_p2                 | -   |        | add_ln228    | add  | fabric  | 0       |
 |    empty_80_fu_2598_p2                  | -   |        | empty_80     | add  | fabric  | 0       |
-|    mac_muladd_8ns_4ns_4ns_12_4_1_U7628  | 1   |        | mul_ln231    | mul  | dsp48   | 3       |
-|    mac_muladd_8ns_4ns_4ns_12_4_1_U7628  | 1   |        | add_ln231    | add  | dsp48   | 3       |
+|    mac_muladd_8ns_4ns_4ns_12_4_1_U7628  | 1   |        | mul_ln236    | mul  | dsp48   | 3       |
+|    mac_muladd_8ns_4ns_4ns_12_4_1_U7628  | 1   |        | add_ln236    | add  | dsp48   | 3       |
 |  + mmult_Pipeline_writeC                | 1   |        |              |      |         |         |
-|    add_ln244_fu_393_p2                  | -   |        | add_ln244    | add  | fabric  | 0       |
-|    add_ln247_fu_411_p2                  | -   |        | add_ln247    | add  | fabric  | 0       |
-|    mac_muladd_12s_4ns_12ns_12_4_1_U7916 | 1   |        | mul_ln250    | mul  | dsp48   | 3       |
-|    mac_muladd_12s_4ns_12ns_12_4_1_U7916 | 1   |        | add_ln250    | add  | dsp48   | 3       |
+|    add_ln249_fu_393_p2                  | -   |        | add_ln249    | add  | fabric  | 0       |
+|    add_ln252_fu_411_p2                  | -   |        | add_ln252    | add  | fabric  | 0       |
+|    mac_muladd_12s_4ns_12ns_12_4_1_U7916 | 1   |        | mul_ln255    | mul  | dsp48   | 3       |
+|    mac_muladd_12s_4ns_12ns_12_4_1_U7916 | 1   |        | add_ln255    | add  | dsp48   | 3       |
 |    j_2_fu_451_p2                        | -   |        | j_2          | add  | fabric  | 0       |
 +-----------------------------------------+-----+--------+--------------+------+---------+---------+
 
@@ -860,32 +860,32 @@
 +-----------------+----------------------------------------------------+---------------------------------------------+
 | Type            | Options                                            | Location                                    |
 +-----------------+----------------------------------------------------+---------------------------------------------+
-| interface       | m_axi port=a offset=slave bundle=gmem0 depth=12608 | src/q_matmul_k_new.cpp:24 in mmult, a       |
-| interface       | m_axi port=b offset=slave bundle=gmem1 depth=12608 | src/q_matmul_k_new.cpp:25 in mmult, b       |
-| interface       | m_axi port=c offset=slave bundle=gmem2 depth=38809 | src/q_matmul_k_new.cpp:26 in mmult, c       |
-| interface       | s_axilite port=a bundle=control                    | src/q_matmul_k_new.cpp:28 in mmult, a       |
-| interface       | s_axilite port=b bundle=control                    | src/q_matmul_k_new.cpp:29 in mmult, b       |
-| interface       | s_axilite port=c bundle=control                    | src/q_matmul_k_new.cpp:30 in mmult, c       |
-| interface       | s_axilite port=return bundle=control               | src/q_matmul_k_new.cpp:31 in mmult, return  |
-| bind_storage    | variable=localA type=RAM_2P impl=BRAM latency=2    | src/q_matmul_k_new.cpp:39 in mmult, localA  |
-| bind_storage    | variable=localB type=RAM_2P impl=BRAM latency=2    | src/q_matmul_k_new.cpp:41 in mmult, localB  |
-| bind_storage    | variable=localC type=RAM_2P impl=BRAM latency=2    | src/q_matmul_k_new.cpp:43 in mmult, localC  |
-| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:52 in mmult          |
-| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:63 in mmult          |
-| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:78 in mmult          |
-| array_partition | variable=subA dim=2 complete                       | src/q_matmul_k_new.cpp:92 in mmult, subA    |
-| array_partition | variable=subB dim=1 complete                       | src/q_matmul_k_new.cpp:95 in mmult, subB    |
-| array_partition | variable=inC dim=0 complete                        | src/q_matmul_k_new.cpp:100 in mmult, inC    |
-| pipeline        |                                                    | src/q_matmul_k_new.cpp:112 in mmult         |
-| pipeline        |                                                    | src/q_matmul_k_new.cpp:125 in mmult         |
-| pipeline        |                                                    | src/q_matmul_k_new.cpp:139 in mmult         |
-| array_partition | variable=inA dim=0 complete                        | src/q_matmul_k_new.cpp:159 in mmult, inA    |
-| array_partition | variable=inB dim=0 complete                        | src/q_matmul_k_new.cpp:161 in mmult, inB    |
-| pipeline        |                                                    | src/q_matmul_k_new.cpp:165 in mmult         |
-| pipeline        |                                                    | src/q_matmul_k_new.cpp:174 in mmult         |
-| dependence      | variable=localC inter false                        | src/q_matmul_k_new.cpp:222 in mmult, localC |
-| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:224 in mmult         |
-| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:245 in mmult         |
+| interface       | m_axi port=a offset=slave bundle=gmem0 depth=12608 | src/q_matmul_k_new.cpp:29 in mmult, a       |
+| interface       | m_axi port=b offset=slave bundle=gmem1 depth=12608 | src/q_matmul_k_new.cpp:30 in mmult, b       |
+| interface       | m_axi port=c offset=slave bundle=gmem2 depth=38809 | src/q_matmul_k_new.cpp:31 in mmult, c       |
+| interface       | s_axilite port=a bundle=control                    | src/q_matmul_k_new.cpp:33 in mmult, a       |
+| interface       | s_axilite port=b bundle=control                    | src/q_matmul_k_new.cpp:34 in mmult, b       |
+| interface       | s_axilite port=c bundle=control                    | src/q_matmul_k_new.cpp:35 in mmult, c       |
+| interface       | s_axilite port=return bundle=control               | src/q_matmul_k_new.cpp:36 in mmult, return  |
+| bind_storage    | variable=localA type=RAM_2P impl=BRAM latency=2    | src/q_matmul_k_new.cpp:44 in mmult, localA  |
+| bind_storage    | variable=localB type=RAM_2P impl=BRAM latency=2    | src/q_matmul_k_new.cpp:46 in mmult, localB  |
+| bind_storage    | variable=localC type=RAM_2P impl=BRAM latency=2    | src/q_matmul_k_new.cpp:48 in mmult, localC  |
+| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:57 in mmult          |
+| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:68 in mmult          |
+| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:83 in mmult          |
+| array_partition | variable=subA dim=2 complete                       | src/q_matmul_k_new.cpp:97 in mmult, subA    |
+| array_partition | variable=subB dim=1 complete                       | src/q_matmul_k_new.cpp:100 in mmult, subB   |
+| array_partition | variable=inC dim=0 complete                        | src/q_matmul_k_new.cpp:105 in mmult, inC    |
+| pipeline        |                                                    | src/q_matmul_k_new.cpp:117 in mmult         |
+| pipeline        |                                                    | src/q_matmul_k_new.cpp:130 in mmult         |
+| pipeline        |                                                    | src/q_matmul_k_new.cpp:144 in mmult         |
+| array_partition | variable=inA dim=0 complete                        | src/q_matmul_k_new.cpp:164 in mmult, inA    |
+| array_partition | variable=inB dim=0 complete                        | src/q_matmul_k_new.cpp:166 in mmult, inB    |
+| pipeline        |                                                    | src/q_matmul_k_new.cpp:170 in mmult         |
+| pipeline        |                                                    | src/q_matmul_k_new.cpp:179 in mmult         |
+| dependence      | variable=localC inter false                        | src/q_matmul_k_new.cpp:227 in mmult, localC |
+| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:229 in mmult         |
+| pipeline        | II=1                                               | src/q_matmul_k_new.cpp:250 in mmult         |
 +-----------------+----------------------------------------------------+---------------------------------------------+
 
 
